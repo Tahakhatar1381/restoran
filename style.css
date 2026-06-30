@@ -1,19 +1,28 @@
 body {
-  width: 99%;
-  height: 2000px;
+  padding: 0;
+  margin: 0;
+}
+img{
+  max-width: 100%;
+  height: auto;
 }
 /* header */
 .header {
+  padding-bottom: 40px;
   width: 100%;
-  height: 20%;
+  min-height: 100vh;
   background-image: url(header-PNG.png);
-  background-size: 100% 100%;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  
+  
 }
 .menu {
   width: 100%;
-  height: 14%;
+  height: 80px;
 
   background: rgba(0, 0, 0, 0.7);
   backdrop-filter: blur(10px);
@@ -21,6 +30,7 @@ body {
 
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-direction: row;
 }
 .button1 {
@@ -29,9 +39,11 @@ body {
 }
 .b1 {
   width: 100%;
-  height: 80%;
+  height: 45px;
   margin: 2% 5%;
   background-color: gold;
+  border: none;
+  border-radius: 8px;
 }
 .b1:hover {
   background-color: rgb(251, 251, 130);
@@ -45,10 +57,10 @@ ul {
   flex-direction: row;
   width: 50%;
   margin: 0%;
-  padding: 0;
+  gap: 30px;
 }
 li {
-  padding: 3%;
+  
   list-style: none;
   color: white;
 }
@@ -81,18 +93,21 @@ li:hover {
 }
 .iconfood {
   color: gold;
-  width: 9%;
-  height: 90%;
-  padding-right: 46%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 /* زیر منو */
 .title {
+ 
   width: 50%;
-  height: 70%;
   display: flex;
-  justify-self: flex-end;
   flex-direction: column;
   align-items: center;
+  align-self: flex-end;
+  
 }
 
 .title > p {
@@ -118,7 +133,7 @@ hr {
 }
 .b2 {
   width: 20%;
-  height: 14%;
+  height: 50px;
   cursor: pointer;
   background-color: gold;
   color: black;
@@ -349,96 +364,94 @@ h1 {
 .footer {
   width: 100%;
   height: 10%;
- 
+
   display: grid;
   grid-template-areas:
-  'a '
-  'b '
-  ;
+    "a "
+    "b ";
   grid-template-columns: 100%;
   grid-template-rows: 60% 40%;
 }
-.footer>.a10{
+.footer > .a10 {
   grid-area: a;
-   display: flex;
+  display: flex;
   justify-content: center;
   background-color: rgb(6, 6, 47);
 }
-.footer>.b10{
+.footer > .b10 {
   grid-area: b;
   background-color: black;
   display: flex;
   flex-direction: row;
 }
-.b10>div{
+.b10 > div {
   color: white;
   width: 31%;
   height: 100%;
   flex-grow: 1;
 }
-.footer>.a10>hr{
-width: 1px;
-height: 50%;
-margin: 2% 1% 2% 1%;
-
+.footer > .a10 > hr {
+  width: 1px;
+  height: 50%;
+  margin: 2% 1% 2% 1%;
 }
-.a10>div{
+.a10 > div {
   width: 30%;
   height: 100%;
   display: flex;
   flex-direction: row;
 }
-.a10>div>div{
-width: 42%;
-height: 100%;
-color: white;
+.a10 > div > div {
+  width: 42%;
+  height: 100%;
+  color: white;
 }
-.a10>div>div>svg{
+.a10 > div > div > svg {
   width: 23%;
   height: 90%;
   margin-right: 70%;
   color: gold;
 }
-.a10>div>div>p{
+.a10 > div > div > p {
   margin: 7% 1% 1% 1%;
 }
-.a10>div>div>h4{
+.a10 > div > div > h4 {
   margin: 10% 3% 1% 1%;
   color: gold;
 }
-.svg10{
- display: flex;
- flex-direction: row;
- flex-basis: 30%;
- justify-content: center;
+.svg10 {
+  display: flex;
+  flex-direction: row;
+  flex-basis: 30%;
+  justify-content: center;
 }
-.svg10>svg{
+.svg10 > svg {
   width: 10%;
   height: 100%;
   margin: 0 4% 0 2%;
 }
-.menu10{
+.menu10 {
   display: flex;
   flex-direction: row;
   flex-grow: 1;
 }
-.menu10>div{
+.menu10 > div {
   width: 25%;
   height: 100%;
   text-align: center;
 }
-.menu10>div>p{
+.menu10 > div > p {
   padding-top: 10%;
 }
-.menu10>div:hover{
+.menu10 > div:hover {
   background-color: rgb(46, 47, 53);
   border-bottom: 2px solid gold;
   cursor: pointer;
   color: rgb(255, 255, 0);
 }
-.text10{
+.text10 {
   text-align: center;
 }
-.text10>p{
+.text10 > p {
   margin-top: 6%;
 }
